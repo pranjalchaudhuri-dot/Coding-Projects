@@ -1,12 +1,109 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title>Doctors Appointment form</title>
-
+    <meta charset="UTF-8">
+    <title>Doctors Appointment Form</title>
 </head>
 
 <body>
-    <form action="GE"></form>
-
-
+    <center>
+       <strong> <h2>Doctors Appointment Form</h2></strong>
+    </center>
+    <form method="POST">
+        <fieldset>
+            <legend>Complete Appointment Form</legend>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <fieldset>
+                    <p>
+                        <label for="your-name">Your Name</label><br>
+                        <input type="text" id="your-name" name="Your_Name"
+                            placeholder="Enter your full name in all CAPITAL LETTERS" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <label for="your-hid">Patient ID/Clinic Registration No.</label><br>
+                        <input type="text" id="your-hid" name="Your_HID" placeholder="Enter your full ID, e.g., E234567"
+                            required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" name="DOB" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="Phone" placeholder="e.g., +12345678910112`9288" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email" name="Email" placeholder="e.g., patient@gmail.com" required>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Details about your visit</legend>
+                <fieldset>
+                    <p>
+                        <label for="select_doc">Your Appointment Details</label><br>
+                        <select name="Doctor" id="select_doc" required>
+                            <option value="" disabled selected>Select a Doctor</option>
+                            <option value="Dr.BOB">DR.BOB - GENERAL PHYSICIAN</option>
+                            <option value="Dr.Lee">Dr.Lee - ORTHODONTIST</option>
+                            <option value="Dr.Ghosh">Dr.Ghosh - Heart Specialist</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label>Why are you visiting the doctor?</label><br>
+                    <label><input type="radio" name="reason" value="checkup" required> Checkup</label><br>
+                    <label><input type="radio" name="reason" value="tooth issue"> Tooth Issue</label><br>
+                    <label><input type="radio" name="reason" value="heart issue"> Heart Issue</label><br>
+                    <label><input type="radio" name="reason" value="emergency"> Emergency</label><br>
+                    <label><input type="radio" name="reason" value="other"> Others (please specify below)</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="specify">Specify other reason:</label><br>
+                    <input type="text" name="other_reason" id="specify" placeholder="Please specify your reason">
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="any_notes_for_the_doctor">Do you have any specifications or requests for us or the
+                        doctor?</label><br>
+                    <input type="text" name="notefordoc" id="any_notes_for_the_doctor"
+                        placeholder="Please mention any specifications">
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="select_day">Preferred days of visitation</label><br>
+                    <select name="day" id="select_day" required>
+                        <option value="" disabled selected>Select a Day</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                    </select>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">BOOK YOUR APPOINTMENT</button>
+            </p>
+        </fieldset>
+    </form>
 </body>
+
+</html>
