@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Donation Form</title>
+</head>
+
+<body>
+
+    <h1>Book Donation Form</h1>
+    <p>Please fill out this form to donate your books to our library. We appreciate your support!</p>
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Donor Details</legend>
+
+            <label for="username">Donor Name:</label>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="pass">Donor ID:</label>
+            <input type="password" id="pass" name="pass" placeholder="LIB-0000000"><br><br>
+
+            <label for="date">Donation Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Book Details</legend>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option>Please select a category of books</option>
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History
+                <option value="education">Educational</option>
+            </select>
+            <br><br>
+
+            <label>Book Condition:</label><br>
+            <input type="radio" name="condition" value="like-new"> Like New<br>
+            <input type="radio" name="condition" value="good"> Good<br>
+            <input type="radio" name="condition" value="used"> Used<br>
+            <br>
+
+            <label for="notes">Notes:</label><br>
+            <textarea id="notes" placeholder="Enter a book title, author name, or an extra note."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Drop-Off Day</legend>
+            <input type="checkbox" name="days" value="monday"> Monday<br>
+            <input type="checkbox" name="days" value="wednesday"> Wednesday<br>
+            <input type="checkbox" name="days" value="friday"> Friday<br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Donate My Book">
+    </form>
+
+</body>
+
+</html>
