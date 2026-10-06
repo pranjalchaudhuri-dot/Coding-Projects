@@ -1,0 +1,98 @@
+/* Dark gradient sky fading from dark blue to navy */
+body { 
+    background-image: linear-gradient(to bottom, #0850c4, #052e6c); 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0 0 40px 0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #6a11cb, #ff7e5f);
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 { 
+    color: #c91717; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px #000000; 
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative; 
+}
+
+
+figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.space-img {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+
+article {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h2 { 
+    color: #ff7e5f; 
+    text-shadow: 1px 1px 2px #000000; 
+    margin-top: 0;
+}
+
+p { 
+    color: #ffffff; 
+    font-size: 18px; 
+    text-shadow: 1px 1px 2px #000000;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.star { 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    display: inline-block;
+    box-shadow: 0 0 10px #ffffff;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+
+@keyframes twinkle {
+    0%, 100% {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    }
+    50% {
+        background-color: #ffeb3b;
+        box-shadow: 0 0 15px #ffeb3b, 0 0 30px #ffeb3b;
+    }
+}
