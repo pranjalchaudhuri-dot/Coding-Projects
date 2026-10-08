@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--CODE A SUPER HEROE CARD-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Super Hero Card</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #050d6c;
+            background-image: linear-gradient(#2034e8, #e3370b);
+        }
+
+        h1 {
+            color: #ffd500;
+            margin-bottom: 40px;
+
+            text-shadow: 2px 2px 0px #635d41, 4px 4px 8px rgba(0, 0, 0, 0.6);
+            font-size: 3.5rem;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+
+        .info-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .hero-card {
+            width: 400px;
+            height: 350px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d6/Superman_Man_of_Steel.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            box-sizing: border-box;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #ffd500;
+
+
+            animation: float 4s infinite;
+        }
+
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(1px);
+            z-index: 1;
+        }
+
+
+        .hero-card>div {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-name {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ffffff;
+
+            text-shadow: -2px -2px 0 #635d41, 2px -2px 0 #635d41, -2px 2px 0 #635d41, 2px 2px 0 #635d41, 0 4px 8px #635d41;
+        }
+
+        .hero-alter-ego {
+            color: #ffd500;
+            margin-top: 5px;
+            text-shadow: 1px 1px 3px #635d41, -1px -1px 3px #635d41;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+
+        .hero-power {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: auto;
+            border-left: 4px solid #ffd500;
+        }
+
+        .hero-power ol {
+            margin: 0;
+            padding-left: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #635d41;
+        }
+
+        .hero-power li {
+            margin: 4px 0;
+        }
+
+
+        .weaknesses {
+            width: 400px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 30, 0.85);
+            color: #b5bbf8;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+        }
+
+        .weaknesses h2 {
+            margin-top: 0;
+            color: #ffd500;
+            text-shadow: 1px 1px 2px #635d41;
+            border-bottom: 2px solid #e3370b;
+            padding-bottom: 5px;
+        }
+
+        .weaknesses ol {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .weaknesses li {
+            margin: 8px 0;
+            font-weight: bold;
+        }
+
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            }
+
+            50% {
+                transform: translateY(-12px);
+                box-shadow: 0 25px 35px rgba(0, 0, 0, 0.6);
+            }
+
+            100% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            }
+        }
+
+
+        @media (max-width: 850px) {
+            .main-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Super Hero Card</h1>
+
+
+    <div class="main-container">
+
+      
+        <div class="hero-card">
+            <div>
+                <div class="hero-name">Superman</div>
+                <div class="hero-alter-ego">Clark Kent</div>
+            </div>
+            <div class="hero-power">
+                <ol>
+                    <li>Super Strength</li>
+                    <li>Flight</li>
+                    <li>Super Healing</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="info-sidebar">
+            <div class="weaknesses">
+                <h2>Weaknesses</h2>
+                <ol>
+                    <li>Kryptonite</li>
+                    <li>Magic</li>
+                    <li>Red Sun Radiation</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="color: #ff6200; text-shadow: 1px 1px 2px #635d41;">&copy; 2024 My Super Hero Card
+
+            made by PRANJAL
+        </p>
+    </footer>
+
+</body>
+
+</html>
