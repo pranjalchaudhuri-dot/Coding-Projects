@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My restaurant Food Menu</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        h1 {
+
+            text-align: center;
+            font-size: 40px;
+            color: rgb(3, 62, 139);
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+
+        body {
+            background-color: rgb(104, 128, 136);
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul>li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(237, 119, 9);
+        }
+
+
+
+
+        ul>li>a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        a.active {
+            background-color: rgb(255, 255, 255);
+            color: rgb(230, 14, 14);
+
+
+        }
+
+
+        h1+p {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(69, 19, 249);
+            text-shadow: 2px 2px 4px #000000;
+            text-display: inline-block;
+        }
+
+        li::nth-child(3) {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(249, 56, 56);
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px #000000;
+        }
+        description-box {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(221, 93, 93);
+            border-radius: 5px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        description-box > p::first-letter {
+            font-size: 200%;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px #000000;
+            text-transform: uppercase;  
+
+        }
+
+        
+    </style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1>My restaurant Food Menu</h1>
+        <center>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+        </center>
+    </header>
+
+
+
+    <p>Welcome to our restaurant! We offer a variety of delicious dishes to satisfy your cravings. Explore our menu
+        below and find your favorite meal.</p>
+
+
+    <div id="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>Burgers</li>
+            <li>Pasta</li>
+            <li>Tiramisu - CHEF'S SPECIAL</li>
+            <li>Coca Cola</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <a href="mailto: info@restraunt.com">Email: info@restraunt.com</a>
+    </div>
+
+    <h2>About Us</h2>
+    <div id="description-box">
+
+        <p>we are a family-owned restaurant that has been serving delicious food for over 20 years. Our chefs use
+            only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.
+        </p>
+    </div>
+
+</html>
+</body>
