@@ -1,0 +1,1054 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9ff;
+    background-image: radial-gradient(#c5dff5 1px, transparent 1px);
+    background-size: 18px 18px;
+    color: #293b59;
+    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+    background-color: white;
+    padding: 28px 20px;
+    border-radius: 16px;
+    border: 1px solid #dfebf7;
+    box-shadow: 0 5px 18px rgba(48, 83, 120, 0.07);
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+header h2 {
+    color: #438ac2;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+header p {
+    color: #718096;
+    margin-bottom: 22px;
+}
+
+nav a {
+    color: #367db5;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #d65387;
+    text-decoration: underline;
+}
+
+.menu-section {
+    margin-bottom: 35px;
+    background-color: rgba(239, 159, 159, 0.96);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(48, 83, 120, 0.05);
+}
+
+.section-title {
+    border-bottom: 2px dotted #c5dff5;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    color: #367db5;
+}
+
+.menu-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5edf5;
+    border-left: 4px solid #9bc9eb;
+    box-shadow: 0 3px 10px rgba(48, 83, 120, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover,
+.about-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(48, 83, 120, 0.12);
+}
+
+.menu-section > .menu-item:nth-child(5) {
+    background-color: #fff1f6;
+    border-left: 4px solid #ed9cbb;
+}
+
+.menu-section > .menu-item:nth-child(5) h3 {
+    color: #c65380;
+}
+
+.item-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-bottom: 14px;
+}
+
+.item-header {
+    margin-bottom: 8px;
+}
+
+.item-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #367db5;
+}
+
+.item-description {
+    margin: 0;
+    line-height: 1.7;
+    color: #718096;
+    font-size: 15px;
+}
+
+.about-box {
+    background-color: #fff0f5;
+    color: #293b59;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 4px solid #ed9cbb;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-box h3 {
+    color: #c65380;
+    margin-top: 0;
+}
+
+.about-box p {
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.about-box p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #d65387;
+    float: left;
+    margin-right: 6px;
+    line-height: 0.9;
+}
+
+footer {
+    text-align: center;
+    color: #718096;
+    font-size: 13px;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 20px 12px;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .menu-section {
+        padding: 15px;
+    }
+
+    .item-image {
+        height: 190px;
+    }
+
+    .menu-item {
+        padding: 13px;
+    }
+
+    .price-box {
+        padding: 12px;
+        display: inline-block;
+        background-color: #82b2ed;
+    }
+
+    span.price {
+        font-size: 15px;
+    }
+
+    .price_value {
+        font-size: 18px;
+        color: #07a62c;
+    }
+}
+
+body.chocolate-page {
+    max-width: none;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #40251f;
+    background-color: #fff7f8;
+    background-image:
+        radial-gradient(#ead8ee 1px, transparent 1px),
+        linear-gradient(135deg, #fff5f7, #f3f5ff, #fff8ed);
+    background-size: 20px 20px, 100% 100%;
+}
+
+.chocolate-page *,
+.chocolate-page *::before,
+.chocolate-page *::after {
+    box-sizing: border-box;
+}
+
+.choco-header {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 45px 20px 15px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.choco-eyebrow {
+    margin: 0 0 12px;
+    color: #b56c91;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.choco-header h1 {
+    margin: 0 0 12px;
+    color: #542c29;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 48px);
+}
+
+.choco-subtitle {
+    margin: 0;
+    color: #826d7c;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.choco-main {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.ice-cream-details {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 45px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #f0e3eb;
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(87, 47, 65, 0.12);
+}
+
+.ice-cream-details .image-container {
+    position: relative;
+    flex: 1 1 50%;
+    min-width: 0;
+    overflow: hidden;
+    background: #ead9d3;
+}
+
+.ice-cream-details .ice-cream-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    max-height: 540px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.ice-cream-details .image-container:hover .ice-cream-image {
+    transform: scale(1.04);
+}
+
+.image-badge {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    background: #f6d9e6;
+    color: #713d58;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.ice-cream-details .ice-cream-info {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 38px;
+    background: #ffffff;
+}
+
+.product-category {
+    margin: 0 0 12px;
+    color: #bd7799;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.ice-cream-info h2 {
+    margin: 0 0 18px;
+    color: #542c29;
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.2;
+}
+
+.product-description {
+    margin: 0 0 24px;
+    color: #77666a;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.flavour-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 25px;
+}
+
+.flavour-tags span {
+    display: inline-block;
+    padding: 8px 11px;
+    border: 1px solid #f1dce7;
+    border-radius: 25px;
+    background: #f9edf3;
+    color: #895570;
+    font-size: 11px;
+}
+
+.ice-cream-details .price-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px;
+    margin: 0 0 25px;
+    border: 1px solid #f0dce8;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #fff0f5, #f1efff);
+}
+
+.price-details {
+    min-width: 0;
+}
+
+.price-label {
+    margin: 0 0 5px;
+    color: #96768a;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.ice-cream-details .price {
+    margin: 0;
+    color: #542c29;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.price-note {
+    margin: 4px 0 0;
+    color: #8e7b85;
+    font-size: 12px;
+}
+
+.price-icon {
+    font-size: 36px;
+}
+
+.back-link {
+    display: inline-block;
+    align-self: flex-start;
+    color: #a4527c;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #542c29;
+    text-decoration: underline;
+}
+
+.order-now-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #d65387, #a94d82);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 14px rgba(214, 83, 135, 0.25);
+    cursor: pointer;
+    transform: scale(1);
+    transform-origin: center;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.order-now-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #bd4275, #873764);
+    box-shadow: 0 9px 22px rgba(169, 77, 130, 0.35);
+}
+
+.order-now-button:active {
+    transform: scale(0.97);
+}
+
+.order-now-button:focus-visible {
+    outline: 3px solid #82b2ed;
+    outline-offset: 4px;
+}
+
+.order-heart {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.order-now-button:hover .order-heart {
+    transform: scale(1.2);
+}
+
+.order-note {
+    margin: 10px 0 0;
+    color: #987f90;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.choco-footer {
+    padding: 15px 20px 30px;
+    color: #987f90;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+    .choco-main {
+        padding: 0 18px;
+    }
+
+    .ice-cream-details .ice-cream-info {
+        padding: 26px;
+    }
+
+    .ice-cream-details .ice-cream-image {
+        min-height: 400px;
+    }
+
+    .ice-cream-info h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    body.chocolate-page {
+        padding: 0;
+    }
+
+    .choco-header {
+        margin-bottom: 25px;
+        padding: 35px 16px 10px;
+    }
+
+    .choco-eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .choco-header h1 {
+        font-size: 32px;
+    }
+
+    .choco-subtitle {
+        font-size: 14px;
+    }
+
+    .choco-main {
+        padding: 0 14px;
+    }
+
+    .ice-cream-details {
+        flex-direction: column;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    .ice-cream-details .image-container {
+        flex: none;
+        width: 100%;
+        height: 280px;
+        min-height: 0;
+    }
+
+    .ice-cream-details .ice-cream-image {
+        display: block;
+        width: 100%;
+        height: 280px;
+        min-height: 0;
+        max-height: none;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .image-badge {
+        top: 15px;
+        left: 15px;
+    }
+
+    .ice-cream-details .ice-cream-info {
+        flex: none;
+        width: 100%;
+        padding: 25px 21px;
+    }
+
+    .ice-cream-info h2 {
+        font-size: 31px;
+    }
+
+    .product-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .flavour-tags {
+        gap: 7px;
+    }
+
+    .flavour-tags span {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+    .ice-cream-details .price-box {
+        padding: 14px;
+    }
+
+    .ice-cream-details .price {
+        font-size: 30px;
+    }
+
+    .price-icon {
+        font-size: 30px;
+    }
+
+    .order-now-button {
+        padding: 14px 27px;
+        font-size: 14px;
+    }
+
+    .choco-footer {
+        padding-bottom: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .order-now-button,
+    .order-heart,
+    .ice-cream-image {
+        transition: none;
+    }
+   
+
+
+
+    ```css
+@media (prefers-reduced-motion: reduce) {
+    .order-now-button,
+    .order-heart,
+    .ice-cream-image {
+        transition: none;
+    }
+}
+
+body.butterscotch-bliss {
+    max-width: none;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #59401f;
+    background-color: #fffaf0;
+    background-image:
+        radial-gradient(#f0d59a 1px, transparent 1px),
+        linear-gradient(135deg, #fff8e6, #fff0d4, #fffaf2);
+    background-size: 20px 20px, 100% 100%;
+}
+
+.butterscotch-bliss *,
+.butterscotch-bliss *::before,
+.butterscotch-bliss *::after {
+    box-sizing: border-box;
+}
+
+.butterscotch-bliss .choco-header {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 45px 20px 15px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.butterscotch-bliss .choco-eyebrow {
+    margin: 0 0 12px;
+    color: #b58a37;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.butterscotch-bliss .choco-header h1 {
+    margin: 0 0 12px;
+    color: #79521e;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 48px);
+}
+
+.butterscotch-bliss .choco-subtitle {
+    margin: 0;
+    color: #9a7b4c;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.butterscotch-bliss .choco-main {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.butterscotch-bliss .ice-cream-details {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 45px;
+    overflow: hidden;
+    background: #fffefa;
+    border: 1px solid #f1e1bd;
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(122, 88, 32, 0.13);
+}
+
+.butterscotch-bliss .ice-cream-details .image-container {
+    position: relative;
+    flex: 1 1 50%;
+    min-width: 0;
+    overflow: hidden;
+    background: #f2dfb6;
+}
+
+.butterscotch-bliss .ice-cream-details .ice-cream-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    max-height: 540px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.butterscotch-bliss .image-container:hover .ice-cream-image {
+    transform: scale(1.04);
+}
+
+.butterscotch-bliss .image-badge {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    background: #fff0c9;
+    color: #79521e;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.butterscotch-bliss .ice-cream-details .ice-cream-info {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 38px;
+    background: #fffefa;
+}
+
+.butterscotch-bliss .product-category {
+    margin: 0 0 12px;
+    color: #b18a40;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.butterscotch-bliss .ice-cream-info h2 {
+    margin: 0 0 18px;
+    color: #79521e;
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.2;
+}
+
+.butterscotch-bliss .product-description {
+    margin: 0 0 24px;
+    color: #88765b;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.butterscotch-bliss .flavour-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 25px;
+}
+
+.butterscotch-bliss .flavour-tags span {
+    display: inline-block;
+    padding: 8px 11px;
+    border: 1px solid #efdfb8;
+    border-radius: 25px;
+    background: #fff5dc;
+    color: #98702c;
+    font-size: 11px;
+}
+
+.butterscotch-bliss .ice-cream-details .price-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px;
+    margin: 0 0 25px;
+    border: 1px solid #eeddb6;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #fff4d7, #fff0e1);
+}
+
+.butterscotch-bliss .price-details {
+    min-width: 0;
+}
+
+.butterscotch-bliss .price-label {
+    margin: 0 0 5px;
+    color: #a18a62;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.butterscotch-bliss .ice-cream-details .price {
+    margin: 0;
+    color: #79521e;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.butterscotch-bliss .price-note {
+    margin: 4px 0 0;
+    color: #a08c6d;
+    font-size: 12px;
+}
+
+.butterscotch-bliss .price-icon {
+    font-size: 36px;
+}
+
+.butterscotch-bliss .back-link {
+    display: inline-block;
+    align-self: flex-start;
+    color: #a87827;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.butterscotch-bliss .back-link:hover {
+    color: #79521e;
+    text-decoration: underline;
+}
+
+.butterscotch-bliss .order-now-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #d6a33f, #b77b24);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 14px rgba(183, 123, 36, 0.25);
+    cursor: pointer;
+    transform: scale(1);
+    transform-origin: center;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.butterscotch-bliss .order-now-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #bd8a2d, #95601b);
+    box-shadow: 0 9px 22px rgba(149, 96, 27, 0.3);
+}
+
+.butterscotch-bliss .order-now-button:active {
+    transform: scale(0.97);
+}
+
+.butterscotch-bliss .order-now-button:focus-visible {
+    outline: 3px solid #e5c16f;
+    outline-offset: 4px;
+}
+
+.butterscotch-bliss .order-heart {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.butterscotch-bliss .order-now-button:hover .order-heart {
+    transform: scale(1.2);
+}
+
+.butterscotch-bliss .order-note {
+    margin: 10px 0 0;
+    color: #a18b6d;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.butterscotch-bliss .choco-footer {
+    padding: 15px 20px 30px;
+    color: #a18b6d;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+    .butterscotch-bliss .choco-main {
+        padding: 0 18px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .ice-cream-info {
+        padding: 26px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .ice-cream-image {
+        min-height: 400px;
+    }
+
+    .butterscotch-bliss .ice-cream-info h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    body.butterscotch-bliss {
+        padding: 0;
+    }
+
+    .butterscotch-bliss .choco-header {
+        margin-bottom: 25px;
+        padding: 35px 16px 10px;
+    }
+
+    .butterscotch-bliss .choco-eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .butterscotch-bliss .choco-header h1 {
+        font-size: 32px;
+    }
+
+    .butterscotch-bliss .choco-subtitle {
+        font-size: 14px;
+    }
+
+    .butterscotch-bliss .choco-main {
+        padding: 0 14px;
+    }
+
+    .butterscotch-bliss .ice-cream-details {
+        flex-direction: column;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .image-container {
+        flex: none;
+        width: 100%;
+        height: 280px;
+        min-height: 0;
+    }
+
+    .butterscotch-bliss .ice-cream-details .ice-cream-image {
+        display: block;
+        width: 100%;
+        height: 280px;
+        min-height: 0;
+        max-height: none;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .butterscotch-bliss .image-badge {
+        top: 15px;
+        left: 15px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .ice-cream-info {
+        flex: none;
+        width: 100%;
+        padding: 25px 21px;
+    }
+
+    .butterscotch-bliss .ice-cream-info h2 {
+        font-size: 31px;
+    }
+
+    .butterscotch-bliss .product-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .butterscotch-bliss .flavour-tags {
+        gap: 7px;
+    }
+
+    .butterscotch-bliss .flavour-tags span {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .price-box {
+        padding: 14px;
+    }
+
+    .butterscotch-bliss .ice-cream-details .price {
+        font-size: 30px;
+    }
+
+    .butterscotch-bliss .price-icon {
+        font-size: 30px;
+    }
+
+    .butterscotch-bliss .order-now-button {
+        padding: 14px 27px;
+        font-size: 14px;
+    }
+
+    .butterscotch-bliss .choco-footer {
+        padding-bottom: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .butterscotch-bliss .order-now-button,
+    .butterscotch-bliss .order-heart,
+    .butterscotch-bliss .ice-cream-image {
+        transition: none;
+    }
+}
+```
+
+
+
+}
