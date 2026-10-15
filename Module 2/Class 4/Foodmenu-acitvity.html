@@ -1,144 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>My restaurant Food Menu</title>
     <meta charset="UTF-8">
-    <style type="text/css">
-        h1 {
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Culinary Canvas - Menu</title>
 
-            text-align: center;
-            font-size: 40px;
-            color: rgb(3, 62, 139);
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-
+    <style>
         body {
-            background-color: rgb(104, 128, 136);
-            position: relative;
-            font-family: Arial, Helvetica, sans-serif;
-
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        ul>li {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgb(237, 119, 9);
-        }
-
-
-
-
-        ul>li>a {
-            display: block;
-            color: white;
+        header {
             text-align: center;
-            padding: 14px 16px;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: #06af17;
             text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
         }
 
-
-        a:hover {
-            background-color: rgb(255, 255, 255);
-            color: black;
-            transform: scale(1.1);
+        nav a:hover {
+            color: #047c10;
+            text-decoration: underline;
         }
 
-        a.active {
-            background-color: rgb(255, 255, 255);
-            color: rgb(230, 14, 14);
-
-
+        .menu-section {
+            margin-bottom: 40px;
         }
 
-
-        h1+p {
-            text-align: center;
-            font-size: 20px;
-            color: rgb(69, 19, 249);
-            text-shadow: 2px 2px 4px #000000;
-            text-display: inline-block;
+        .section-title {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
         }
 
-        li::nth-child(3) {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            background-color: rgb(249, 56, 56);
-            border-radius: 5px;
-            box-shadow: 2px 2px 4px #000000;
+        .menu-item {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background-color: white;
+            padding: 18px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #06af17;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        description-box {
+
+        .menu-item:hover,
+        .about-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section > .menu-item:nth-child(4) {
+            background-color: #f0f8f0;
+            border-left: 5px solid #047c10;
+        }
+
+        .menu-section > .menu-item:nth-child(4) h3 {
+            color: #047c10;
+        }
+
+        .item-header {
+            margin-bottom: 10px;
+        }
+
+        .item-header h3 {
+            margin: 0;
             font-size: 18px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(221, 93, 93);
-            border-radius: 5px;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            
         }
 
-        description-box > p::first-letter {
-            font-size: 200%;
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px #000000;
-            text-transform: uppercase;  
-
+        .item-description {
+            margin: 0;
+            line-height: 1.6;
+            color: #555555;
         }
 
-        
+        .about-box {
+            background-color: #222222;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #06af17;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .about-box h3 {
+            color: #06af17;
+            margin-top: 0;
+        }
+
+        .about-box p {
+            margin-bottom: 0;
+            line-height: 1.7;
+        }
+
+        .about-box p::first-letter {
+            font-size: 250%;
+            font-weight: bold;
+            color: #06af17;
+            float: left;
+            margin-right: 8px;
+            line-height: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+
+            .menu-item {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
-
-
 
 <body>
 
     <header>
-        <h1>My restaurant Food Menu</h1>
-        <center>
-            <nav>
-                <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <span style="display: inline-block; background-color: #06af17; padding: 10px 20px; border-radius: 8px;">
+            <h1 style="margin: 0; color: white;">THE CULINARY CANVAS</h1>
+        </span>
 
-            </nav>
-        </center>
+        <h1>Our Seasonal Menu</h1>
+        <p>Handcrafted dishes prepared with fresh, locally sourced ingredients.</p>
+
+        <nav>
+            <a href="#menu-list">Our Selection</a> |
+            <a href="#about">About Us</a>
+        </nav>
     </header>
 
+    <main>
+        <section class="menu-section" id="menu-list">
+            <h2 class="section-title">Appetizers, Mains &amp; Desserts</h2>
 
+            <a class="menu-item" href="https://allrecipes.com" target="_blank">
+                <div class="item-header">
+                    <h3>Burgers</h3>
+                </div>
+                <p class="item-description">
+                    A juicy beef patty grilled to perfection, topped with cheddar cheese,
+                    fresh lettuce, tomatoes and our signature sauce, served on a toasted bun.
+                </p>
+            </a>
 
-    <p>Welcome to our restaurant! We offer a variety of delicious dishes to satisfy your cravings. Explore our menu
-        below and find your favorite meal.</p>
+            <a class="menu-item" href="https://allrecipes.com" target="_blank">
+                <div class="item-header">
+                    <h3>Pasta</h3>
+                </div>
+                <p class="item-description">
+                    Fresh fettuccine tossed in a creamy garlic and Parmesan sauce,
+                    with mushrooms, black pepper and a touch of fresh basil.
+                </p>
+            </a>
 
+            <a class="menu-item" href="https://allrecipes.com" target="_blank">
+                <div class="item-header">
+                    <h3>Tiramisu - CHEF'S SPECIAL</h3>
+                </div>
+                <p class="item-description">
+                    A classic Italian dessert made with layers of coffee-soaked biscuits,
+                    creamy mascarpone and a generous dusting of cocoa powder.
+                </p>
+            </a>
 
-    <div id="menu">
-        <h2>Our Menu</h2>
-        <ul>
-            <li>Burgers</li>
-            <li>Pasta</li>
-            <li>Tiramisu - CHEF'S SPECIAL</li>
-            <li>Coca Cola</li>
-        </ul>
-    </div>
+            <a class="menu-item" href="https://allrecipes.com" target="_blank">
+                <div class="item-header">
+                    <h3>Coca-Cola</h3>
+                </div>
+                <p class="item-description">
+                    A refreshing, ice-cold drink served with ice and a fresh wedge of lime.
+                </p>
+            </a>
+        </section>
 
-    <div id="contact">
-        <h2>Contact Us</h2>
-        <a href="mailto: info@restraunt.com">Email: info@restraunt.com</a>
-    </div>
+        <section class="about-box" id="about">
+            <h3>About Us</h3>
+            <p>
+                We are a family-owned restaurant that has been serving delicious food
+                for over 20 years. Our chefs use fresh ingredients and carefully prepare
+                every dish to give our customers a meal worth remembering.
+            </p>
+        </section>
+    </main>
 
-    <h2>About Us</h2>
-    <div id="description-box">
-
-        <p>we are a family-owned restaurant that has been serving delicious food for over 20 years. Our chefs use
-            only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.
-        </p>
-    </div>
-
-</html>
 </body>
+</html>
