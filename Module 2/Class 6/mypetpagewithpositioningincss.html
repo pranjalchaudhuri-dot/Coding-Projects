@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legendary Larry Page</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding-top: 180px;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #ffe6d4;
+            color: #331a1a;
+            height: 2500px;
+        }
+
+        header {
+            text-align: center;
+            color: #533838;
+            background-color: #ff7300;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            box-shadow: 0 6px 0px #533838;
+            border-bottom: 4px dashed #fff;
+            display: block;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px #807474;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #533838;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background: #fff;
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: 2px solid #533838;
+        }
+
+        .main-wild-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .buddy_the_labradour_label {
+            display: inline-block;
+            background-color: aquamarine;
+            position: sticky;
+            top: 140px;
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 4px dashed aliceblue;
+            color: #008f1f;
+            font-weight: bold;
+            font-size: 1.4rem;
+            box-shadow: 4px 4px 0px #533838;
+            z-index: 990;
+            transform: rotate(-2deg);
+            text-decoration: dotted;
+            margin-bottom: 40px;
+        }
+
+        .pet-of-the-month {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #533838;
+            background-color: #ff7300;
+            position: relative;
+            right: 23px;
+            display: block;
+            padding: 50px 30px;
+            border-radius: 30px;
+            border: 5px solid #533838;
+            box-shadow: 8px 8px 0px #533838;
+        }
+
+        .pet-of-the-month h3 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .pet-of-the-month article {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #533838;
+        }
+
+        .adoption-badge {
+            display: inline-block;
+            background-color: #ff7300;
+            color: #533838;
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            border: 2px solid #533838;
+            box-shadow: -2px 2px 0px #533838;
+        }
+
+        .larry-photo-zone {
+            background: #fff;
+            border: 5px solid #533838;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #533838;
+            margin-bottom: 50px;
+            transform: rotate(1deg);
+        }
+
+        .larry-image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            margin: 0 auto 20px auto;
+            background-color: #eee;
+            border: 4px dashed #ff7300;
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .larry-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 11px;
+        }
+
+        .fun-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .stat-card {
+            background: aquamarine;
+            border: 4px solid #533838;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 0px #533838;
+        }
+
+        .stat-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #533838;
+        }
+
+        .stat-card p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #008f1f;
+        }
+
+        .party-footer {
+            text-align: center;
+            padding: 40px;
+            background: #533838;
+            color: #fff;
+            margin-top: 60px;
+            border-top: 5px dashed #ff7300;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>LARRY THE LABRADOR</h1>
+        <nav>
+            <a href="#trophy">The Trophy</a>
+            <a href="#photo">There He Is</a>
+            <a href="#stats">Larry Stats</a>
+        </nav>
+    </header>
+
+    <div class="main-wild-container">
+
+        <div class="buddy_the_labradour_label">
+            ALERT: Buddy.com says Larry is 100% the best choice for you!!!
+        </div>
+
+        <div id="trophy" class="pet-of-the-month">
+            <span class="adoption-badge">Urgent Placement</span>
+            <h3>Larry won pet of the month</h3>
+            <article>
+                The Local Pet Agency couldn't handle the sheer power of Larry's tail wags. He broke the record for most
+                treats consumed in a single sitting while maintaining an incredibly handsome smile. Notice how this card
+                shifts to the left because of its relative properties!
+            </article>
+        </div>
+
+        <div id="photo" class="larry-photo-zone">
+            <h2> Picture Day for Old Larry</h2>
+
+
+            <div class="larry-image-placeholder">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKIArgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBgMFAAIHAQj/xABLEAABAgQDBAUJBQUGBAcBAAACAQMABBESBSEiEzEyQQZCUWFxBxQjUoGRobHBM2Jy0fAVJEOS8TRTVIKD4WNzorIlJjVFo9LiF//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAAICAgEEAwEBAAAAAAAAAAABAhEDITEEEkFREyIygWH/2gAMAwEAAhEDEQA/AOItLrjpPkgIXpnHMMPV51IXfyr/APqOaiuoYd/JTNeb9NpEf8QLjBe0VVPiiQvJS/LNeiE06105wgdQjKvqHpDutTNFTwjo6iR9Nscw50y2RSSG2N2VFVRXLxWsc2x0CwTpDi80Gkhm0Fq3vVDLn2JT2x1CeNr/APoWGP8A+NkHB/Fwl86fGBcCkcGMDEyb9XSWnsyjZGysu1QX0iYKX6SYiwvVmXPcqqqfBUi4wkMOCW/eHRutSIlo1TsWq+v/ANRQbhmGTmJzOwlGBIiFetlkld65bkjydldq8Tso1a11YPkXJwAEbSEvxWxMnKtIuHa39nQJMSEzInbNtEPV4MvYu5Ynlf8AU1D6qQe9LecGO1mXCIf4YkpRqUhYdrTD5OjxXCvyTuhqMmtg5QUqRvKObJ4eK7L+JwxeI7o/ietyKF5ohAxHTddq0rEzc+0bzomQtkLmkvWXuzgitlSaSHHCMZYkWSELXHyoRCTaUBOaeKwbjA4ZPSbUzh7RNzPWbHShJzVO9IUf2w1MHbsPS8JbMFJS9lMlg+RxF2ReaGXk5ly0rhbIeL307Y6ssouNI5MUZKVtkL0uVgkbRWlW0rULdvSqeMNnk+mdk81LHwzDdntTd9YUsKxCT87x4nZMitYQ5ZkivRo0rduVE3090Xq+VDB8MPZSmBuC6zp6g/VY8zJPIm4whf8ATpbi9t0V2ISzspiU4wY2lt3PiSqnPsXsgNwL9Nur9eEF4x5RWMWlimncHkCJtxA2LjhbQ6oq3VREyTdFcU4/MM7XZS0sRDpbGpW1zpxJG0VJq5Khqa4QdiKf+UpMg/xJcPgsLxq7MPMNNcThWlpWg98X6o+HR5h/zkrduXoxEaDkvcq1Xx3RVJNzl5DLzkyNor9mSB8RRMoU0rOWb2NQ7fCejbAzz7jjDjijLWulRp5FpqRFyAkWteSr31jfoxgM10nxbEJOfQJU5EU2p1reZKqpnzSladiQi7aZB5gnZl9wheHU4alZQkWuqu6LSWn3BnsTbfnZ1UceA/3dFVXFRFS5aUyRFREzpnu7NYK1RKEEZdwurF30acdkekOGTP8AdzLZcXKqIvwVYpSeiZhwhtK7w+nxh7OtLHwmO/lTlX3emDrQCOyIUJvs1IlSX2InuhvnCaewrohibroi62LYC4VUuNRttTKtVXthf8qM27fg2Iy4iQzEsLglbmK0RaovhvggJ5+b8mMnPHaT8hPoWoU0ohoqZeCxXswfCFbygNbLpbOFd9tadviKJ80WPejPRLGOkf8A6ewRMXWuPZUD2VRV9kOOPdF2OkHlCw9qYIhlnmEJy0kFSRKrRFXnmkdawfB8M6MyYyOEtbMfxXL7Vh0TYu4D5MsAw+QbaxNrzt+20riX9e6LJjya9FGntv8As4v+WTpKmXdWGJnWdx8PV+9Ejztga4YgSVkMMwy79nyMvLXcWzaQYnF/8P8ALArr0Ro7CsdBUxLycx/a5OXfu4to0JfSKsuiHRc5kpn9gyBOkV1xNJv3eEGod8SIdnBDTEyonOimCzH9nkWJZ8eEhHLurHO+l+GYrhjzTuIE2w02VrTjI33c0rXcuUdWmF+7aQ8P5RTdJZdrG+jc9Iuj6UW1NvTmKpnl3wP0OOnZwRiYIJzE3zdIdoyQ7S21CrXJeWcBYlL2PNP3XDMVIdWeWS17M4Kwp53z9+VnX3NgLDnoy3Ctexd3jAMyUy6YkZEWlLbvBNyReLUhZNxLDCJYfNhdtH7RRi4IhPTq/m/3gToWbQYqwM8PoNohOdb4c4v+kGGlKTjvm9zks8SkwQ9ZN/wrGOece5R8mmB0gOceEOh8tp2l02Q8VtuS/GKBqYfA/RbMR/mhwkMGF2QalsTdtYZLbkPAudedOaLG8x0cwrYi61c3dqESNK+C9ydtI5ZdRjToO6F7FLGpYbGH7rScG5weFN6bo9kcQmsKKbZltKkTd2nPIV+GcMXSeUslpEjfYcFkREXG3BLQijxUzy8IqGkkkxPFUcnCENqGzsC65KF27qbo26fIpMztXoSVBkeq5v8AWTtp2R4No22jbq8ecTstifGOr/ZPyibZh6sdsenlJXZDzKLqh06Ro7ifk36PTjX2kuStF7KitexMom6Gyz870Bx7DiIbiK9otolmaU37slTOBsLLzvyXTbd39hnr/YqVoqdmcWPkbZ/a2K4vhwiQyL0uBO21oKotFVEXcq1WMkuS2PXQuT/aD2FY/wATUrh6iRZ6jVERKZZ7lX3QwyLxTE46R+tbFo6xLYTgIy0k0LLDLdjbY7hSKnowV4Ovn1SX3xD/AEUuBiERANfVhfxvF2GjEQfbEuqJF8kit8onS5ro5hugSfmXhXZNiN3tLsStI+dJ3FJ7Epx2cnn3nZkvvKlFrkiJSlE7Ibd6BI+i5ebdd6w8XVi1ZuO2ELydriZyzHno6XG7tW8e5fpHSmgs6sJIGCuOEARUTuM+bnDG8z6G22OW+U9qelGRKUutIVuIa1Gm+BoEdBw7G5OeZt27d34kqKxk5dLzLT/E0XF+Xtj5kkcXxDDJxl/D3Hm5lstRXFR3PcQrlTlSO/4Djw43gLTptE26Q2k2XVVPpDv2FHOemfRicwfpV54A24VO12cwIpQa7wKmSLnl28ucKBHe9bcRWtoPuy+kfR+GOsYhJlKzbQvMODaTbg1T+vfHH/Kd0Xk+jM/LO4eReZzFRFtyuhUzpXmmeXPKLxvdkzWqFzCjFqZuN3Zjlc4I3WpzVEhzwnEcfAx80kxm5ThYet4k7V5pXnXOEC0vNidAhISHiH5KkTYZiuKyOqRnHBH8WXfkvOObrMfe7RnFHTQxkpgBadY2k5da23slRO9EVeyuUZjMmQALoOsDMtio7MqbPNEShZoqU8KRS9F+keIzrJSM3s3C4toRIKivLPnWIGHX5TGHdqQzctmDjLw3Wqm8a/ReyPLUG5OI6IsbxGRm8NYYJqW2rZKTrcuXEFURa1TKvYir2xQvTcsOIzySkmnmpmKheKEo0Rcq+1fdA+Is7WffdlJMm5YitbEa9uXv30iRMKxZ2cm5dhs2lZIdqKkm9UWle+lY9DFDtiUkVsjKNGZOukQjlbaSD29vsieclZYAEpciHfdtHEK7spRIrmHHRZ13COQx6Tw/3pR0fLkWkz0oYcEoqVDl5PE87wrpLhh/xGEMR70qi/SOxeTjokz0R6MtNf8AuE0KOzbnOtMhTuHd71jlfkQkSe6Uuvulcx5sQqHrLVFT2JT4x3hXbzaL1iil/pxZK7nQPjxWSDo+A/CFzorM3+eSodV5R+cX+Nu/uBF6zn5wodE3Raxiea/4yl76fnEv9CX5GDFMPYmzLzgRIeG75wur0XwpoyJqTES9a2G5y0zL7sZKyd+o4qhWRdHMKGRltY6i1fhi6K0OsMRuGLTNx/rshNx/pe1KG6IEIiNbnPD+kNCex2c2R8BRR4/hbU9JutHaQlHNXfKSwB+iJxz70EyXlXYB4WpgScYLiEqV9iwAFO9H8OA9q7Kt7Ufu/GLHDZcWQ0DaMWsy3J4nJtTmHu3MPDc2Q/FIr2z2QEOmIYzOjL+12og76Vt4gt70XdAPlWwscT6PFMhdt5OpNj6yEqIqezTnFXgM0UvjGIDdp85uH+Uaw7YiIzFzXVc+tF/3hRdIbVs+e2MNmTuYAbScppIkCLOTwbEZcxEGNuJcQjUvZWO0MYQ00e1/i+tbn74MSWs60RLInqiviOSYP0fnGnrnZaZG7+7bLTnX1c0pDiGHtX7U8Mm33beJzT7FzT3wxzczJyIXTDurqjdcpeCRVzE5MzFtlsox1i69PdRIzuCd0NQoAxpt+blmmAkSbIXUIdo4Gqm+iISqq0ignZk2ukWNvSw0V55q4SGijaConii7+6LZQ80uJovOXSqW0eJfcnOMbUTUiCXRHyJVcNEtQt1MqRSyK6FJo5cGAYjZsAESaLrZ1H84nDotM+r8/wAo7CeHyzWl0m2/xEgxASyIXauHw1eEHezTtFnyXSU5gPSEfOCHzZ4VAhtXSqpRF/P2R15g7AK/qksIzZyJ+lB8R+7lX5wyYRibU2BDcO1Gl33k5LGkJ2ZTjW0FYuV+FF91xPksc9wib836Qvj+tw/lDxNO7WTmWvVoXuWi/OOX4g4Up0hIuran5LBJ7CPB1aTd84etDrRZo7e9b1RhT6NYheF3W2dsMMqe1e+7bFxdkM2xk7w4v12x829PX5z9sOyzt2ybK0bfr31rH0HjL/oXSjhvT5RdnyK7V+vySKASguaG4rhujRFLa3RjikZ643YTXr4YQHefJm26HQBoSL0pET4/dSq0T3JBk0fphL1vzzis8n86X7KaEOEaW/lBs8NjxcQiNbbu6JmCKUGiaeaf/wAQ66Q+CEg/RYdpZy/Yf8tPlT6Qn4hMD/4QP/DeIvaSL+cXExiBS4NbJ230Y3eC03RlKSimW3wxgfdaaDazDtoj6xRRT+PEenD2iEf75z6J+cVb00Uwe1dInLeG7dn4bu2MdMmrS2Ql6o3W7+fwjleVvgTyvwTA4QXOmJE6XWc1LSvwXwj1TIwuP/5NSknPwzpFcxMuum6J3D94e/4RhvWHbddd97i/pENmbk3yWIvMdd0m+rp1Z9u9IEVwWjuI3HLq/OPGHvODtAbhbqN35p9YnblWgeK0gH/m57qbocI7sLNZiVdmDHhbK3q1LJM96884xzDbLhN0Rgt3DXfORsmSIS4S4fZSJHMNnv4ol926IWSRr2z9AoSzUuGt+7T1h4s+VO+CG3xlzuaf63q8ojDC3z9KZEIj6w8+/wBkRzEg00DF7pE7mI6sorvl7Bxn6L7DJ5qbnBauG55sgLVxVRae2sJGMy5TE4+QcTbd/sRaL80X2RYS7vm8y1NAV2xcQitrpX65RaS2Hi70hnHTH0Atlq9ZC3fBY6cc3NbFFgHQl798FoytHO7wpWHzD35UzdKUIS2dRLx7O6ECZw93B5/atamM9XiiwN0P6RNYTjc5hk8WzaJxLXiLKpbq+Krv743g/AmOGMvkbLvDcPDdHE+l/wDbyK67rXfKOwY+8xKMuunqEvWLIY4X0jxN2YnHbOG76UT4RoIqnR9bT+KPQTXA5KRcUEyAGb2zHrV96IqwmM6f0IcKXkx1ENxeyGGdnfOAdK64dootl7kX84UOh8xYyIu/5R7+VO+GWaaslmhDqjGcmBC7IPzEm1iIampUlFwfVQqUXwrl7UgzETFoxIyLS2Om27klN2cNPReVYmOjz8m7wzAqJFzz3KngucV/SXASkWWpkCFy5tAc0805p2ZeMZ5YNwsUmUKuNHquIbh6pfPtjxx2y6wbi4RuHw9+6PSET9FaQkPW4kpGxtlpLa2tXerxRxsg1ZArCsHUP3eGvhEgNiAWuujxJ8s8/bGpOFpF10tOq3OmaVziMJi8ysIbbuG25OcLaCgxsWgDQRFq1Dbllu3x5KzExIvk6ythkNvJcsu2vYnuiAHGjt0lqr8/DfSkbtS7r6WtKiINczVAT3rvWHFuxpNvQ1oQtPXGNttOqm+PXJnas3GQlpUrrvcnvSIZt51pnhEhLq28+aV9sRtAM2yOyY2H+mv0iaO+zZTEwKxq3St1tdS9qdsV6YU069rJz8NqimW7wVKrDHLCQBba3p8eX6SNldILuH/LGlA4xFxzCmJcPRCThOeqWWW6uUMGHYc7L4I0Ux9qRfDkmcVqzrG2aYaYH0lBK7Tn27u5YcHmv3YWA4bUEY6cEVtnPkcb0KswwMwyTR6o5N5QMLKSxIXQDaecN2bPdmCKvyX4R2V5gmpkhPihe6ZYKOISFwDc6yV7P3lRFS2vYqKqe2NVpkCN0ZmncbwpqTxCcInREtmROJU0SqIlfci1osJ+K4K6y8V8OeAPycpiotA0IsOPIbfaPala1Ra0iPFw2s+6NtttYs6scO6NnO1kHb7bYNkcOdE7rrSGtvjSkXxyv7z/AJY0bZ1wC+Ih6CNvzvSGW4tmy2REOdBolqe2qx1N9kdIxQ9A8LGVCcnrbfOCS0fBVVV96/CGNpb5m71Yh7ZzPQw4Y15vLND1Ys5poZ3DXWPWHTFbLP6IsJJyNF6JOeE6/KATRiN1q26vetYh2u1tK1wf7zV+v0kW3S7DtliREGlpwbx7B7UimalyB4rLbs7hIvcv1pHmzjUqFskEWvtzdu3avalfhEr5MWbU9IlqHVlnvRF+MRjLjsR1CV3CN2dcsqxKKMeia9G4W0+xzoPKqr3rGfAKzQWbwJ+UEtWniQUFd9fBE7YklkaESV4ipd8VzjJuZFrZDLu8IptLqaVVc8k5bsoDebmJhUEVFxRFKLbvTNK09m+Ki+Aeht/bQh1doN2kiHhWq8qb03V8IHm+kgtcerdwjwrlv91YXHJsjPhJsrreHsRPziZpkT2pG7aPAPYSpnu7Mk+EQ8jRossi3PHL3tAkQ5Wj40omfgnhAM5OzN5EBaR1Fdv5/r2QAKXmQ26fVH2Z++C3WC82GwrrW1K67t+tIO+0yHNsN6FyUziGMCMx9gzqu9bu7kjoeJzAy7JPmNwt6iEetTcnvhT8nj9j0y0dt2Raf1SGDpMxMzGFOtywiROUu1UWm/Lv3R6PT18aaMc05RxSlFW0nRWNvuzbLUy7xOer8IyfX92tOK7AXXQtkZhohIS06PrVfpBWJoQAUayVEdJm+XDFvnzfsRMVwmTmHixMGibnJVxsiJvcepNRD2oqIiqnKAMT0PbUCEtoN2nv5ReDNOyk/twHi0kPrJ2RW4sjDoCTQ7C0tTd3bzH21yjNSPV6bIk+1+RdcLXdEdNcHPMX/ZNOF/pr+UbSOGvzcyI7Iha/iOEKogpzpXesVZ0ypbbG/CF2WDyw/wDCT45/WCJdbz0RXuz7W282at/+vdFhJn/NCs8x7dl3LloixljioYWLFhyzgKKTEyp6ZTI3sCdxesI6bq8vfCwj5G8JG793i7lp8lg/pc+R4wLV38FPj+UVC4e15y6QDbqTiLLNPfyqvjHn55fd0RYSrgzB26bhIutmXbv8OUasiQag2fDbbbnmvx3Vr4Rkjc1pP0ZZWjzLmq05frwjeWedvutESc1CWWrklfnmvKMFbGaiLp9UbrtJWqKlTu9n6rGIQN2ordxZ3a6c/wCsSOK6YNOndbxXEWdV3/RYHm1JloNkyswTmokUc+eeXjSNIciCiN0DK+4muH7Piyzr7kT2RA5NsS4aBHTQuHhVe73L3RbTTjBnr1XUt6t1d6fBeXOBZpuW0kbQt3Fq9mW7l27ozcRtA3nTR6gIRIq2jzr/AEidiZaBkhaEdNNQ+xFpTLfT3R5LsMABXiIukVo20K1f90VYFZmGgeLZCIjmH4ea/KHXaGhp6H2tYxoK7aN6iy/r7KQ7vnHM+i0y61jDROu2jkJb9VUy39ypHRZqPR6Z/QEDPPjLgRBxfr4wu4jiFjPpdV39IsJ53i9WFfE0dd1RcpFUeusieqF/FZV13g6sMcq1ezcfViNGbztt6vz/AEkTQC1LrMtM6OrpiUDmXT4rRi4Zk9dtum6N1krIEBUSkrspkiPrFDAwHqafViAGPXGDGAshjCmhKCWy12xGMSANmqKQip6XShecy0yFtrjdtxdVRzp7UyhfbV03tk6Ooi4S62WVvJd8OPSYdr0eIg4mXEPT7lp74SGz+yENVopd7eary5+6OPOkpkhYzO1udNotI2j81StKrlT3xKTTt+ght2iD3D3U9lYHYc2Rl1iEvsSrp5LT2fKCmJlq90bh1D1t4Urnuqi07UzjHXgq15IVEr3RdK4RbUBH1k3dniuceSUkwQ+heJHeumSLy7eX67Y2R4ZgystbK3SI7qLRM+3muUbSsy3KWkQkmlR3Uuqta0ioL7EOiVyYaAGtThOiV3ox4VRc0y+cRzLpTAXbXrXN/f31Si9y786UiBmWGXAhuHZcZXElMlVM+fNcs8ljSYB/r7MmitHTTStOXfuXlX2RPbQ2yRJSZ2JE7tCHIi2hXXdlOyiVpXtitAiPTcI6tNulOxVWvLNK5c0i1ZcIGfM7nC1W3C3xKm7uXJUgQHmHQLULexK1u0blKuXNd61VV3wpUyWEy4vy/p+rtLeZIKpyqq5ZU5746Zh0159g7D/WIdXsWn0jlwzegi6o16y6skRMu2ipuXl73joLO+d4OTR6SbfW4bfWzT41zjp6Wf2cSiecAT4y/WcBHLX/AA+O76QZPDrgO8v13f0jqZRjUnYFsSsSIhq/W/8AKCmTvD/p/XugtUELv12wUBVrKiHVgR5mLl0dHvgB60OP9Zf1gaAARn/uiVAsjRyaHUIetdECuEcSAWrsb7SBBibaDZFWILdTa4bMjbd6ItPhn9IRmxFoysG4nKdVaUXdv7vzh7k0vDZXWk4Nt3q1yr8YVZ3DncPnylpgiImxvJu6qEmeaLTvr4RhnXDAiGTE5PQJWiXq881WqpmudKf7xK03Jy4NOha56MTcK7mqIlF5qtP+5YBlis43SIXB9Xmu7Lv7fHsSN3XBlJa60SuG23mK1zJeVK5J4xzOVAgvZ7LZPg1aWzuIhppNKrbnuqiLRN8Cg+ZHegqGlEKwkHPsz3+PhGzS7K3a3XON6rqavDlSuVeecESlW2/OB2Iq4S1cN+iclolM+/shXwFWCEmpjvZSsaoiIM1TmzVYyMiHyLwSF9iwfWQkz57liqZRFQqpzIvbUc4yMiiSZ1fRPdwkqeNN8Mnk+JfOZjNdTWffqSPYyNMH7RQzTGarWA5hEqWW8c++PIyPQGgqX66coKTi/XZGRkAzSYikm+OMjIkAFYmaj2MiEBhxg8cZGRQFrKf26X/EkC+UBEHG8PUURFKW1U56kjIyIzfhiFHC1VxwycVSKqpUs1pXdFkIo4s3eiFSyl2dMy/JIyMjg8AgURQsbMCRFHZotqplXKBcYEWmpfZCgVRVW1KVzWPIyHDkTP/Z"
+                    alt="Handsome Old Larry the Labradour">
+            </div>
+
+            <p>Look at those friendly eyes! Truly a master of fetching sticks and stealing hearts.</p>
+        </div>
+
+        <div id="stats" class="pet-of-the-month" style="background-color: #fff; color: #533838; right: 0;">
+            <h2> Larry's Unbeatable Attributes</h2>
+
+            <div class="fun-stats-grid">
+                <div class="stat-card">
+                    <h4>Nap Efficiency</h4>
+                    <p>1455% Power</p>
+                </div>
+                <div class="stat-card" style="background-color: #ff7300;">
+                    <h4>Socks Stolen</h4>
+                    <p>42 Post-Wash</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Bark Volume</h4>
+                    <p>Sub-Woofer Level</p>
+                </div>
+                <div class="stat-card" style="background-color: #ff7300;">
+                    <h4 style="color: #fff;">Treat Capacity</h4>
+                    <p style="color: #fff;">Infinite</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="party-footer">
+        Thank you for visiting Larry's corner of the internet! call : 911-911-00384 to adopt your new furry friend
+    </div>
+
+
+
+</body>
+
+</html>
