@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>My Animal Fact File</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="refresh" content="5">
+
+
+    <title>Animal fact file</title>
+
     <style type="text/css">
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             background-color: #377908;
             margin: 20px;
-
-        }
-
-        h1 {
-            color: #90eeb9;
+            border: 1cm solid rgb(1, 17, 47)e
         }
 
         .animal-fact {
-            border: 2px solid #2e8b57;
+            border: 2px rgb(1, 153, 1);
             padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            background-color: #ffffff;
+            margin-bottom: 10px;
+            background-color: #ebf9e1;
             display: inline-block;
-            width: 300px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            width: auto;
+            box-shadow: 2px 2px 6px rgb(27, 51, 51);
+
         }
 
 
         .fact-file {
+
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            margin: 20px;
             color: darkslategray;
-            background-color:rgb(234, 234, 166);
-            width: 250px;
+            width: 254px;
             height: auto;
             padding: 25px;
+
         }
 
         .animal-fact h2 {
             margin-top: 0;
-            color: #2e8b57;
+            color: #2e8b3c
         }
 
         .animal-fact p {
-            margin: 0;
+            margin: 0
         }
 
         .animal-fact:hover {
-            transform: scale(1.05);
+            transform: translateX(1.2);
             transition: transform 0.3s ease;
         }
 
         .animal-name {
+            font-style: italic;
             font-weight: bold;
-            color: #075629;
-            font-size: 25px;
+            color: #619b0b
         }
 
         .cool-fact {
             font-style: italic;
-            color: #e65c01;
+            color: red;
+            display: inline-block;
+            background-color: antiquewhite;
+            opacity: 0.4;
+        }
+
+        .animal-fact img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .heading {
+            position: sticky;
+            display: block;
+            transform:rotate(4deg);
+            background-color:aqua;
+            border:0.5cm dotted
+            padding: 2cm
+
         }
     </style>
+
+
+
+
+
 </head>
 
 <body>
-    <h1>My Animal Fact File</h1>
+    <center>
+        <h1 class="heading">My Animal Fact File</h1>
+    </center>
 
-    <div class="fact-file">
-        <div class="animal-fact">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Cat">
-            <h2>Cat</h2>
-            <p class="cool-fact">Cats are small, carnivorous mammals that are often kept as pets. They are known for their agility, playful
-                behavior, and ability to hunt vermin.</p>
+    <center>
+        <div class="fact-file">
+            <div class="animal-fact">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Cat">
+
+                <h2>Cat</h2>
+
+                <p class="cool-fact">Cats are small, carnivorous mammals that are often kept as pets. They are known for
+                    their agility, playful
+                    behavior, and ability to hunt vermin.</p>
+
+
+            </div>
+
+
+
         </div>
-
-    <div class="animal-fact">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Dog_in_the_garden.jpg" alt="Dog">
-        <h2>Dog</h2>
-        <p>Dogs are domesticated mammals that have been bred for various purposes, including companionship, work, and
-            protection. They are known for their loyalty and intelligence.</p>
-    </div>
-
-    <div class="animal-fact">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Horse_in_field.jpg" alt="Horse">
-        <h2>Horse</h2>
-        <p>Horses are large, strong animals that have been used by humans for transportation, work, and sport. They are
-            known for their speed, endurance, and beauty.</p>
-    </div>
+    </center>
 </body>
