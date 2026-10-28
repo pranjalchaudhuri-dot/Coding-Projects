@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildcats Fitness Routine</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            letter-spacing: 0.5px;
+            background-color: #ffd875;
+            padding: 30px;
+        }
+
+        .intro-box {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto 40px auto;
+            padding: 35px;
+            background-color: #1d4ed8;
+            border: 6px solid #f59e0b;
+            border-radius: 12px;
+            box-shadow: 5px 5px 0px #0f172a;
+            color: #ffffff;
+        }
+
+        .intro-box h1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            color: #f59e0b;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 0px #000000;
+        }
+
+        .intro-box p {
+            font-family: Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .card-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .routine-card {
+            flex: 1;
+            min-width: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 4px solid #1d4ed8;
+            border-radius: 8px;
+            box-shadow: 4px 4px 0px #f59e0b;
+            margin-bottom: 30px;
+        }
+
+        .routine-card h2 {
+            color: #1d4ed8;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #f59e0b;
+            padding-bottom: 5px;
+        }
+
+        .routine-card p {
+            font-family: Arial, sans-serif;
+            color: #334155;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .photo-space {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e2e8f0;
+            border: 3px solid #f59e0b;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .fitness-note {
+            width: 100%;
+            max-width: 1100px;
+            margin: 20px auto 0 auto;
+            padding: 20px;
+            background-color: #fef3c7;
+            border: 4px solid #f59e0b;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #1d4ed8;
+            box-shadow: 4px 4px 0px #1d4ed8;
+        }
+
+  
+        @media (max-width: 800px) {
+            .card-container {
+                flex-direction: column;
+            }
+
+            .routine-card {
+                width: 100%;
+            }
+
+            .intro-box h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="intro-box">
+        <h1>Wildcats Training Camp</h1>
+        <p>
+            Champions are built in the off-season! Bring maximum energy,
+            protect our home court, and execute every single rep with
+            blue and gold pride. Leave everything on the floor!
+        </p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="routine-card">
+            <h2>01. Game Day Pace</h2>
+
+            <p>
+                Blaze through explosive sprint drills and ladder work
+                to lock down our signature fast-break transition speed.
+            </p>
+
+            <img
+                class="photo-space"
+                src="https://assets.streetarena.me/posts/images/7-running-drills-for-basketball-to-boost-speed-and-agility/drills-basket-min.png"
+                alt="Basketball player practising speed and agility drills">
+        </div>
+
+        <div class="routine-card">
+            <h2>02. Power House</h2>
+
+            <p>
+                Build paint-dominating strength. Dominate your heavy
+                squats, dynamic push-ups, and explosive medicine ball slams.
+            </p>
+
+            <img
+                class="photo-space"
+                src="https://images.squarespace-cdn.com/content/v1/66c62123064b8803d87a94f0/e4274b65-d463-4a87-bf59-e71841a49e6c/Sports%2Bhehe.jpg?format=2500w"
+                alt="Athletes training with medicine balls to build strength">
+        </div>
+
+        <div class="routine-card">
+            <h2>03. Championship Grind</h2>
+
+            <p>
+                Lock in your focus with core-crushing planks and active
+                recovery flexibility work to stay sharp for the fourth quarter.
+            </p>
+
+            <img
+                class="photo-space"
+                src="https://cdn.prod.website-files.com/648d534ff1237afd409ed6f2/64b6d2446d00c1f48f9df66d_fh1ewpm5-64b6d046cbcbc.webp"
+                alt="Basketball player performing a plank exercise">
+        </div>
+
+    </div>
+
+    <div class="fitness-note">
+        <strong>We over me:</strong>
+        Stay hydrated, check your form, and push your teammates to greatness today!
+    </div>
+
+</body>
+</html>
