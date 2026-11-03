@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f8fb;
+      color: #1f2937;
+      margin: 0;
+      padding: 32px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #111827;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      border: 1px solid #e5e7eb;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coding Projects</h1>
+    <p class="subtitle">A cleaned-up, course-based organization for all learning projects.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Courses</h2>
+        <ul>
+          <li><a href="courses/class-1/index.html">Class 1</a></li>
+          <li><a href="courses/class-2/index.html">Class 2</a></li>
+          <li><a href="courses/class-3/index.html">Class 3</a></li>
+          <li><a href="courses/class-4/index.html">Class 4</a></li>
+          <li><a href="courses/class-5/index.html">Class 5</a></li>
+          <li><a href="courses/class-6/index.html">Class 6</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Modules</h2>
+        <ul>
+          <li><a href="modules/module-2/index.html">Module 2</a></li>
+          <li><a href="modules/module-3/index.html">Module 3</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Extras</h2>
+        <ul>
+          <li><a href="extras/index.html">Standalone projects</a></li>
+          <li><a href="bootstrap-4-grid.html">Bootstrap 4 grid</a></li>
+          <li><a href="project.html">Project page</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
