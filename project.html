@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Quest: Retro Arcade Challenge</title>
+
+    <link href="https://jsdelivr.net" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        @import url('https://googleapis.com');
+
+        body {
+            background-color: #121c17;
+            background-image: radial-gradient(#1e382b 1px, transparent 1px);
+            background-size: 24px 24px;
+            color: #e4ebe7;
+            font-family: 'Poppins', sans-serif;
+            padding: 50px 20px;
+        }
+
+        .arcade-card {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #1a2b22;
+            border: 4px solid #39ff14;
+            border-radius: 0px;
+            box-shadow: 12px 12px 0px #0a140f, 0 0 20px rgba(57, 255, 20, 0.2);
+            padding: 50px 30px;
+        }
+
+        .display-1,
+        .display-2,
+        .display-3,
+        .display-4 {
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .display-1 {
+            color: #39ff14;
+            text-shadow: 3px 3px 0px #121c17, 6px 6px 0px #ff007f;
+        }
+
+        .display-2 {
+            color: #ff007f;
+        }
+
+        .display-3 {
+            color: #00e5ff;
+        }
+
+        .display-4 {
+            color: #ffea00;
+        }
+
+        mark {
+            background-color: #ff007f;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 2px 8px;
+        }
+
+        abbr {
+            text-decoration: underline dotted #00e5ff;
+            color: #00e5ff;
+            cursor: help;
+        }
+
+        dl {
+            background-color: #121c17;
+            border: 2px dashed #39ff14;
+            padding: 25px;
+            max-width: 650px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        dt {
+            color: #ffea00;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-family: 'Impact', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        dd {
+            margin-left: 0;
+            margin-bottom: 15px;
+            color: #bcd1c6;
+            border-left: 3px solid #ff007f;
+            padding-left: 15px;
+        }
+
+        code {
+            background-color: #240046;
+            color: #39ff14;
+            padding: 4px 10px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            border: 1px solid #39ff14;
+        }
+
+        pre {
+            background-color: #000000;
+            color: #00e5ff;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border: 2px solid #00e5ff;
+            display: inline-block;
+            max-width: 100%;
+            text-align: left;
+            box-shadow: 4px 4px 0px #ff007f;
+        }
+
+        blockquote {
+            background-color: rgba(255, 234, 0, 0.1);
+            border: 2px solid #ffea00;
+            padding: 25px;
+            margin: 40px auto 10px auto;
+            max-width: 600px;
+        }
+
+        .blockquote p {
+            color: #ffea00;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .blockquote-footer {
+            color: #bcd1c6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="arcade-card text-center">
+
+        <h1 class="display-1 mb-2">
+            JUNGLE QUEST <br>
+            <small class="text-white opacity-75 fs-5 d-block mt-2">INSERT COIN TO START THE RUN</small>
+        </h1>
+
+        <h2 class="display-2 my-4">STAGЕ 01: THE GAUNTLET</h2>
+        <p class="lead mx-auto mb-4 text-light" style="max-width: 680px;">
+            Welcome to the pixelated depths of the wilderness. Your avatar must bypass fierce obstacles, navigate
+            treacherous canopy ropes, and secure the ancient high-score emblem before the countdown expires.
+        </p>
+
+        <h3 class="display-3 my-4">LEVEL DESIGN</h3>
+        <p class="mb-4">
+            Warning! Players must drop into the spawn zone before <mark>CLOCK::08:00_AM</mark>. Failure to arrive on
+            time results in an automatic forfeiture of your lifeforce token.
+        </p>
+
+        <dl>
+            <dt>LEVEL 1-1: PIXEL CANOPY</dt>
+            <dd>Cross a suspended 8-bit platform layout swinging above an endless pixel pit.</dd>
+
+            <dt>LEVEL 1-2: MATRIX MOUNTAIN</dt>
+            <dd>Scale a vertical retro wireframe wall with crumbling ledges and falling hazards.</dd>
+
+            <dt>LEVEL 1-3: NEON VALLEY RUSH</dt>
+            <dd>A rapid zipline exit running directly over a glowing canyon grid sequence.</dd>
+        </dl>
+
+        <h4 class="display-4 my-4">SYSTEM SETTINGS</h4>
+
+        <p class="mb-4">
+            Verify that your protective suit is completely calibrated. If you detect a hardware glitch, locate the
+            nearest <abbr title="Arcade Player Support Hub Quarterback">APSHQ</abbr> node instantly.
+        </p>
+
+        <p class="mb-4">
+            Execute the terminal launch code sequence on the main panel to activate your platform lift:
+            <code>SYS_RUN::START_QUEST</code>
+        </p>
+
+        <div class="my-4">
+            <p>made by pranjal</p>
+        </div>
+
+        <blockquote class="blockquote">
+            <p class="mb-2">"GAME OVER IS ONLY A STATE OF MIND."</p>
+            <footer class="blockquote-footer text-end">ANONYMOUS ARCADE MASTER</footer>
+        </blockquote>
+
+    </div>
+
+</body>
+
+</html>
