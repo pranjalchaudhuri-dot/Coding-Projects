@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Park Challenge</title>
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        body {
+            margin: 0;
+            background-color: #eaf4fb;
+            color: #243746;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            background-color: #176b87;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.4rem;
+        }
+
+        .navbar {
+            background-color: #10566d;
+        }
+
+        .sticky-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 0.65rem 1rem;
+            background-color: #f4b942;
+            color: #243746;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #183b4a1a;
+        }
+
+        h2 {
+            color: #176b87;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #c5dce7;
+            margin: 1.5rem 0;
+        }
+
+        dl {
+            margin-bottom: 0;
+        }
+
+        dt {
+            margin-top: 0.75rem;
+            color: #10566d;
+        }
+
+        dd {
+            margin-left: 1rem;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: #10566d;
+            color: #fff;
+            text-align: center;
+        }
+
+        pre {
+            overflow-x: auto;
+            margin: 0;
+            padding: 1rem;
+            border-radius: 6px;
+            background-color: #eef5f7;
+            color: #243746;
+        }
+
+        blockquote {
+            margin: 0;
+            padding-left: 1rem;
+            border-left: 4px solid #f4b942;
+            color: #526b76;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Adventure Park Challenge</h1>
+        <p class="lead mb-0">Experience the thrill of adventure!</p>
+    </header>
+
+    <nav class="navbar navbar-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#home">Adventure Park</a>
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#visit">Plan your visit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sticky-bar">Open daily, 9:00 AM-6:00 PM · Plan your next adventure!</div>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Adventure Park</h2>
+            <p>Get ready for an exciting day outdoors. Discover activities for all ages and make memories together.</p>
+            <div class="text-center mt-3">
+                <img src="https://unsplash.com" class="img-fluid rounded" alt="Adventure Park Landscape">
+            </div>
+        </section>
+        <hr>
+        <section id="activities">
+            <h2>Activities</h2>
+            <p>Explore a variety of thrilling activities designed for all ages.</p>
+            <dl>
+                <dt>Canopy Course</dt>
+                <dd>Move between platforms and enjoy the park from above.</dd>
+                <dt>Nature Trail</dt>
+                <dd>Take a relaxing walk and discover local plants and wildlife.</dd>
+                <dt>Climbing Wall</dt>
+                <dd>Challenge yourself on climbing routes for different skill levels.</dd>
+            </dl>
+        </section>
+        <section id="visit">
+            <h2>Plan your visit</h2>
+            <p>Use this simple schedule to plan your day:</p>
+            <pre>9:00 AM Park opens
+10:00 AM Begin an activity
+12:00 PM Take a lunch break
+5:30 PM Last activity entry</pre>
+            <hr>
+            **<blockquote>**
+                <p class="mb-0">“The best days are spent exploring somewhere new.”</p>
+            </blockquote>
+        </section>
+    </main>
+    <footer>Adventure Park · Have a wonderful day!</footer>
+    <script src="https://jsdelivr.net"></script>
+</body>
+
+</html>
