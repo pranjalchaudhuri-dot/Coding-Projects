@@ -1,0 +1,37 @@
+
+<head>
+    <title>Simple Calculator</title>
+    <META charset="UTF-8">
+</head>
+
+
+
+<h1>Simple Calculator</h1>
+<p>Perform all operations using JavaScript</p>     
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+
+<script>
+ 
+  let num1 = 10;
+  let num2 = 2;
+
+
+  let add = num1 + num2;
+  let sub = num1 - num2;
+  let mul = num1 * num2;
+  let div = num1 / num2;
+
+
+document.getElementById("add").innerHTML = "The sum of " + num1 + " and " + num2 + " is: " + add;
+document.getElementById("sub").innerHTML = "The difference of " + num1 + " and " + num2 + " is: " + sub;
+document.getElementById("mul").innerHTML = "The product of " + num1 + " and " + num2 + " is: " + mul;
+document.getElementById("div").innerHTML = "The quotient of " + num1 + " and " + num2 + " is: " + div; 
+document.getElementById("add").style.color = "blue";
+document.getElementById("sub").style.color = "green";   
+document.getElementById("mul").style.color = "orange";   
+document.getElementById("div").style.color = "red";   
+
+</script>

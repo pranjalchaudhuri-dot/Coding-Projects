@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JS ACTIVITY 1</title>
+    <meta charset="UTF-8">
+    <title>My Phone Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+
+<body class="container" style="background-color: aliceblue; position: ; text-align: center; height: auto;">
+    <div>
+        <div class="container" style="max-width: 500px;">
+            <h1 class="mb-1 my-1"> My phone Contac Card</h1>
+            <p class="mb-4">Contact details can be found here feel free to contact.</p>
+
+        </div>
+
+        <div class="container bg-success text-dark">
+            <ul style="dec">
+                <li><strong>Name:</strong></li> <p id="name"></p>
+                <li><strong>Phone:</strong></li> <span id="phone"></span>
+                <li><strong>School:</strong></li><span id="school"></span>
+                <li><strong>City:</strong></li><span id="city"></span>
+            </ul>
+        </div>
+
+        <div class="card bg-dark text-light">
+            <div class="card-body">
+                <pre id="codeDisplay" class="mb-0 my-1">
+                    let myContact = {
+    name:"Pranjal",
+    phone:"+91 6293146668",
+    school:"The Heritage School,Kolkata",
+    city:"Kolkata.west-bengal,India",
+    email:"pranjal.chaudhuri@gmail.com"</pre>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+
+let myContact = {
+    name:"Pranjal",
+    phone:"+91 6293146668",
+    school:"The Heritage School,Kolkata",
+    city:"Kolkata.west-bengal,India",
+    email:"pranjal.chaudhuri@gmail.com"
+}
+
+
+document.getElementById("name").textContent = myContact.name;
+document.getElementById("phone").textContent = myContact.phone;
+
+document.getElementById("school").textContent = myContact["school"];
+document.getElementById("city").textContent = myContact["city"];
+
+
+
+    </script>
+</body>

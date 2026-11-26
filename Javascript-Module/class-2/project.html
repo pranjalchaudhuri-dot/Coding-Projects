@@ -1,0 +1,28 @@
+
+<html>
+<head>
+  <title>Multiplication Function</title>
+</head>
+<body>
+
+  <h2>Multiplication Result</h2>
+  <p id="result1"></p>
+  <p id="result2"></p>
+
+  <script>
+    function multiply(num1, num2) {
+    
+      if (num2 === undefined) {
+        num2 = 1; 
+      }
+      return num1 * num2;
+    }
+
+    document.getElementById("result1").innerHTML = "5 * 4 = " + multiply(5, 4);
+
+
+    document.getElementById("result2").innerHTML = "5 * 1 = " + multiply(5);
+  </script>
+
+</body>
+</html>

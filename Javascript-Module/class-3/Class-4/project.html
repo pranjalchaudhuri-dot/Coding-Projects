@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favourite Person Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #F0F0F2; }
+    h1 { color: #FF5A43; }
+    .card-label { font-size: 11px; color: #999; text-transform: uppercase; }
+    pre { font-size: 13px; color: #333; }
+  </style>
+</head>
+<body class="py-4">
+  <div class="container">
+    <h1 class="mb-1">My Favourite Person Profile</h1>
+    <p class="text-muted mb-4">Introduction to Objects in JavaScript</p>
+
+    <div class="card shadow-sm mb-3" style="max-width:400px;">
+      <div class="card-body">
+        <h5 class="card-title" style="color:#FF5A43;">Profile Details</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span class="card-label d-block">Name</span><strong id="name">-</strong></li>
+          <li class="list-group-item"><span class="card-label d-block">Relationship</span><strong id="relationship">-</strong></li>
+          <li class="list-group-item"><span class="card-label d-block">Favourite Activity</span><strong id="activity">-</strong></li>
+          <li class="list-group-item"><span class="card-label d-block">City</span><strong id="city">-</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card shadow-sm" style="max-width:400px;">
+      <div class="card-body">
+        <h6 style="color:#FF5A43;">JavaScript Object Used</h6>
+        <pre id="codeDisplay" class="bg-light p-3 rounded border mb-0"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const favouritePerson = {
+      name: "Aarav Sharma",
+      relationship: "Best Friend",
+      activity: "Hiking",
+      city: "Kolkata"
+    };
+
+    document.getElementById("name").textContent = favouritePerson.name;
+    document.getElementById("relationship").textContent = favouritePerson.relationship;
+
+    document.getElementById("activity").textContent = favouritePerson["activity"];
+    document.getElementById("city").textContent = favouritePerson["city"];
+
+    document.getElementById("codeDisplay").textContent = JSON.stringify(favouritePerson, null, 2);
+  </script>
+</body>
+</html>

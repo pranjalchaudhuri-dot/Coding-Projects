@@ -1,0 +1,35 @@
+<!--
+1) Start the HTML document with `<!DOCTYPE html>`.
+
+2) Open the `<html>` tag.
+
+3) Inside the `<head>` section:
+   a) Keep the `<head>` tag (it can be empty for this example).
+
+4) Inside the `<body>` section:
+
+5) Create a button using `<button>`:
+   a) Add an `onclick` attribute to call the function:
+      `onclick="myfunction(5)"`
+   b) Set button text: "Execute JS function"
+   c) NOTE: Only one value (5) is passed, so the second parameter should be handled as optional.
+
+6) Add a `<script>` tag to write JavaScript code.
+
+7) Inside the `<script>` tag:
+   a) Create a function named `myfunction` that accepts two parameters: `x` and `y`.
+
+8) Handle the default value for `y`:
+   a) Check if `y` is `undefined` using:
+      `if (y === undefined)`
+   b) If it is undefined, set `y = 2`.
+
+9) Multiply `x` and `y`:
+   a) Use `x * y` to calculate the product.
+
+10) Display the result:
+    a) Use `document.write(x * y);` to write the result on the page.
+
+11) Close all tags properly:
+    a) Close `</script>`, `</body>`, and `</html>`.
+-->

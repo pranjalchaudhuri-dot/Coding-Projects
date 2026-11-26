@@ -1,8 +1,3 @@
 {
-    "editor.formatOnPaste": true,
-    "chat.agent.maxRequests": 100,
-    "editor.inlineCompletionsAccessibilityVerbose": false,
-    "diffEditor.experimental.useTrueInlineView": true,
-    "editor.inlineSuggest.enabled": true,
-    "editor.inlineSuggest.showToolbar": "always"
+    "chat.disableAIFeatures": true
 }
